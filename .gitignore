@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# ビルド時に生成されるリソース（多言語resxとコンパイル済みシェーダー）
+**/Texts*.resx
+**/*.cso
