@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>ko-kr</value></data>
+<data name="EffectName" xml:space="preserve"><value>크로스해치 음영</value></data>
+<data name="BasicGroup" xml:space="preserve"><value>기본</value></data>
+<data name="ColorGroup" xml:space="preserve"><value>색상</value></data>
+<data name="DetailGroup" xml:space="preserve"><value>상세</value></data>
+<data name="StyleName" xml:space="preserve"><value>스타일</value></data>
+<data name="StyleDesc" xml:space="preserve"><value>선 방향과 계조와 질감의 프리셋을 선택합니다.</value></data>
+<data name="AmountName" xml:space="preserve"><value>적용량</value></data>
+<data name="AmountDesc" xml:space="preserve"><value>원본과 해칭 결과를 혼합합니다.</value></data>
+<data name="DensityName" xml:space="preserve"><value>밀도</value></data>
+<data name="DensityDesc" xml:space="preserve"><value>선 간격입니다. 값이 작을수록 선이 촘촘해집니다.</value></data>
+<data name="ThicknessName" xml:space="preserve"><value>굵기</value></data>
+<data name="ThicknessDesc" xml:space="preserve"><value>각 해칭 선의 너비입니다.</value></data>
+<data name="ShadowDepthName" xml:space="preserve"><value>음영</value></data>
+<data name="ShadowDepthDesc" xml:space="preserve"><value>어두운 영역에서 선이 늘어나는 강도입니다.</value></data>
+<data name="FlowName" xml:space="preserve"><value>흐름</value></data>
+<data name="FlowDesc" xml:space="preserve"><value>선 방향이 명암 기울기를 따르는 강도입니다.</value></data>
+<data name="OutlineName" xml:space="preserve"><value>윤곽</value></data>
+<data name="OutlineDesc" xml:space="preserve"><value>해칭 위에 더해지는 윤곽선 강도입니다.</value></data>
+<data name="InkColorName" xml:space="preserve"><value>잉크 색</value></data>
+<data name="InkColorDesc" xml:space="preserve"><value>해칭과 윤곽선의 색입니다.</value></data>
+<data name="PaperColorName" xml:space="preserve"><value>종이 색</value></data>
+<data name="PaperColorDesc" xml:space="preserve"><value>종이 또는 배경의 색입니다.</value></data>
+<data name="ColorModeName" xml:space="preserve"><value>색상</value></data>
+<data name="ColorModeDesc" xml:space="preserve"><value>출력 색을 만드는 방식입니다.</value></data>
+<data name="LineLayersName" xml:space="preserve"><value>선 레이어</value></data>
+<data name="LineLayersDesc" xml:space="preserve"><value>어두운 부분에 겹치는 선 방향의 최대 수입니다.</value></data>
+<data name="ToneSoftnessName" xml:space="preserve"><value>계조 부드러움</value></data>
+<data name="ToneSoftnessDesc" xml:space="preserve"><value>선 레이어가 나타나는 경계의 부드러움입니다.</value></data>
+<data name="GrainName" xml:space="preserve"><value>입자감</value></data>
+<data name="GrainDesc" xml:space="preserve"><value>종이와 잉크의 절차적 입자입니다.</value></data>
+<data name="SeedName" xml:space="preserve"><value>시드</value></data>
+<data name="SeedDesc" xml:space="preserve"><value>입자와 선 위상을 고정하는 값입니다.</value></data>
+<data name="StylePen" xml:space="preserve"><value>펜</value></data>
+<data name="StylePenDesc" xml:space="preserve"><value>펜화와 일러스트용 가는 선입니다.</value></data>
+<data name="StyleEngraving" xml:space="preserve"><value>판화</value></data>
+<data name="StyleEngravingDesc" xml:space="preserve"><value>판화와 지폐풍 사선입니다.</value></data>
+<data name="StyleManga" xml:space="preserve"><value>만화</value></data>
+<data name="StyleMangaDesc" xml:space="preserve"><value>만화 배경용 음영 톤입니다.</value></data>
+<data name="StyleBlueprint" xml:space="preserve"><value>청사진</value></data>
+<data name="StyleBlueprintDesc" xml:space="preserve"><value>설계도와 기술 자료풍 직교선입니다.</value></data>
+<data name="ColorModeInkAndPaper" xml:space="preserve"><value>잉크와 종이</value></data>
+<data name="ColorModeInkAndPaperDesc" xml:space="preserve"><value>종이색과 잉크색만으로 그립니다.</value></data>
+<data name="ColorModePreserveSource" xml:space="preserve"><value>원본 색 유지</value></data>
+<data name="ColorModePreserveSourceDesc" xml:space="preserve"><value>원본 색을 남기고 잉크선을 덧그립니다.</value></data>
+<data name="LineLayersAuto" xml:space="preserve"><value>자동</value></data>
+<data name="LineLayers1" xml:space="preserve"><value>1</value></data>
+<data name="LineLayers2" xml:space="preserve"><value>2</value></data>
+<data name="LineLayers3" xml:space="preserve"><value>3</value></data>
+<data name="LineLayers4" xml:space="preserve"><value>4</value></data>
+<data name="TagCrossHatch" xml:space="preserve"><value>크로스해치</value></data>
+<data name="TagHatching" xml:space="preserve"><value>해칭</value></data>
+<data name="TagPen" xml:space="preserve"><value>펜화</value></data>
+<data name="TagEngraving" xml:space="preserve"><value>판화</value></data>
+<data name="TagBlueprint" xml:space="preserve"><value>청사진</value></data>
+<data name="TagManga" xml:space="preserve"><value>만화</value></data>
+</root>

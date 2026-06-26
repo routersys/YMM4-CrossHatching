@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="CurrentCulture" xml:space="preserve"><value>ar-sa</value></data>
+<data name="EffectName" xml:space="preserve"><value>تظليل بالخطوط المتقاطعة</value></data>
+<data name="BasicGroup" xml:space="preserve"><value>أساسي</value></data>
+<data name="ColorGroup" xml:space="preserve"><value>اللون</value></data>
+<data name="DetailGroup" xml:space="preserve"><value>تفاصيل</value></data>
+<data name="StyleName" xml:space="preserve"><value>النمط</value></data>
+<data name="StyleDesc" xml:space="preserve"><value>يختار إعدادًا مسبقًا لاتجاه الخط ودرجته وملمسه.</value></data>
+<data name="AmountName" xml:space="preserve"><value>المقدار</value></data>
+<data name="AmountDesc" xml:space="preserve"><value>يمزج بين المصدر ونتيجة التظليل.</value></data>
+<data name="DensityName" xml:space="preserve"><value>الكثافة</value></data>
+<data name="DensityDesc" xml:space="preserve"><value>المسافة بين الخطوط. القيم الأصغر تقارب الخطوط.</value></data>
+<data name="ThicknessName" xml:space="preserve"><value>السماكة</value></data>
+<data name="ThicknessDesc" xml:space="preserve"><value>عرض كل خط تظليل.</value></data>
+<data name="ShadowDepthName" xml:space="preserve"><value>الظل</value></data>
+<data name="ShadowDepthDesc" xml:space="preserve"><value>مدى تكاثف الخطوط في المناطق الداكنة.</value></data>
+<data name="FlowName" xml:space="preserve"><value>التدفق</value></data>
+<data name="FlowDesc" xml:space="preserve"><value>مدى اتباع اتجاه الخط لميل الإضاءة.</value></data>
+<data name="OutlineName" xml:space="preserve"><value>المخطط</value></data>
+<data name="OutlineDesc" xml:space="preserve"><value>قوة خطوط الكفاف فوق التظليل.</value></data>
+<data name="InkColorName" xml:space="preserve"><value>لون الحبر</value></data>
+<data name="InkColorDesc" xml:space="preserve"><value>لون خطوط التظليل والكفاف.</value></data>
+<data name="PaperColorName" xml:space="preserve"><value>لون الورق</value></data>
+<data name="PaperColorDesc" xml:space="preserve"><value>لون الورق أو الخلفية.</value></data>
+<data name="ColorModeName" xml:space="preserve"><value>اللون</value></data>
+<data name="ColorModeDesc" xml:space="preserve"><value>طريقة تكوين لون الإخراج.</value></data>
+<data name="LineLayersName" xml:space="preserve"><value>طبقات الخطوط</value></data>
+<data name="LineLayersDesc" xml:space="preserve"><value>أقصى عدد لاتجاهات الخطوط في الظل.</value></data>
+<data name="ToneSoftnessName" xml:space="preserve"><value>نعومة التدرج</value></data>
+<data name="ToneSoftnessDesc" xml:space="preserve"><value>نعومة الحد الذي تظهر عنده طبقة الخط.</value></data>
+<data name="GrainName" xml:space="preserve"><value>الحبيبات</value></data>
+<data name="GrainDesc" xml:space="preserve"><value>حبيبات إجرائية للورق والحبر.</value></data>
+<data name="SeedName" xml:space="preserve"><value>البذرة</value></data>
+<data name="SeedDesc" xml:space="preserve"><value>قيمة ثابتة للحبيبات وطور الخط.</value></data>
+<data name="StylePen" xml:space="preserve"><value>قلم</value></data>
+<data name="StylePenDesc" xml:space="preserve"><value>خطوط رفيعة للرسم بالقلم والتوضيح.</value></data>
+<data name="StyleEngraving" xml:space="preserve"><value>نقش</value></data>
+<data name="StyleEngravingDesc" xml:space="preserve"><value>خطوط مائلة بأسلوب النقش والأوراق النقدية.</value></data>
+<data name="StyleManga" xml:space="preserve"><value>مانغا</value></data>
+<data name="StyleMangaDesc" xml:space="preserve"><value>درجة تظليل لخلفيات المانغا.</value></data>
+<data name="StyleBlueprint" xml:space="preserve"><value>مخطط أزرق</value></data>
+<data name="StyleBlueprintDesc" xml:space="preserve"><value>خطوط متعامدة للرسومات التقنية.</value></data>
+<data name="ColorModeInkAndPaper" xml:space="preserve"><value>الحبر والورق</value></data>
+<data name="ColorModeInkAndPaperDesc" xml:space="preserve"><value>يرسم بلوني الورق والحبر فقط.</value></data>
+<data name="ColorModePreserveSource" xml:space="preserve"><value>الحفاظ على المصدر</value></data>
+<data name="ColorModePreserveSourceDesc" xml:space="preserve"><value>يبقي اللون الأصلي ويضيف خطوط الحبر.</value></data>
+<data name="LineLayersAuto" xml:space="preserve"><value>تلقائي</value></data>
+<data name="LineLayers1" xml:space="preserve"><value>1</value></data>
+<data name="LineLayers2" xml:space="preserve"><value>2</value></data>
+<data name="LineLayers3" xml:space="preserve"><value>3</value></data>
+<data name="LineLayers4" xml:space="preserve"><value>4</value></data>
+<data name="TagCrossHatch" xml:space="preserve"><value>تظليل متقاطع</value></data>
+<data name="TagHatching" xml:space="preserve"><value>تظليل</value></data>
+<data name="TagPen" xml:space="preserve"><value>رسم بالقلم</value></data>
+<data name="TagEngraving" xml:space="preserve"><value>نقش</value></data>
+<data name="TagBlueprint" xml:space="preserve"><value>مخطط أزرق</value></data>
+<data name="TagManga" xml:space="preserve"><value>مانغا</value></data>
+</root>
