@@ -25,11 +25,11 @@ public sealed class CrossHatchShadingEffect : VideoEffectBase
 
     [Display(GroupName = nameof(Texts.BasicGroup), Name = nameof(Texts.DensityName), Description = nameof(Texts.DensityDesc), Order = 20, ResourceType = typeof(Texts))]
     [AnimationSlider("F1", "px", 3d, 80d)]
-    public Animation Density { get; } = new(12, 3, 80);
+    public Animation Density { get; } = new(12, 3, 320);
 
     [Display(GroupName = nameof(Texts.BasicGroup), Name = nameof(Texts.ThicknessName), Description = nameof(Texts.ThicknessDesc), Order = 30, ResourceType = typeof(Texts))]
     [AnimationSlider("F1", "px", 0.2d, 12d)]
-    public Animation Thickness { get; } = new(1.2, 0.2, 12);
+    public Animation Thickness { get; } = new(1.2, 0.2, 48);
 
     [Display(GroupName = nameof(Texts.BasicGroup), Name = nameof(Texts.ShadowDepthName), Description = nameof(Texts.ShadowDepthDesc), Order = 40, ResourceType = typeof(Texts))]
     [AnimationSlider("F1", "%", 0d, 200d)]

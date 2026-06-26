@@ -24,8 +24,8 @@ internal sealed class CrossHatchShadingEffectProcessor(IGraphicsDevicesAndContex
         var fps = effectDescription.FPS;
         var next = new Parameters(
             Percent(item.Amount.GetValue(frame, length, fps), 0f, 1f, 1f),
-            Finite(item.Density.GetValue(frame, length, fps), 3f, 80f, 12f),
-            Finite(item.Thickness.GetValue(frame, length, fps), 0.2f, 12f, 1.2f),
+            Finite(item.Density.GetValue(frame, length, fps), 3f, 320f, 12f),
+            Finite(item.Thickness.GetValue(frame, length, fps), 0.2f, 48f, 1.2f),
             Percent(item.ShadowDepth.GetValue(frame, length, fps), 0f, 2f, 1f),
             Percent(item.Flow.GetValue(frame, length, fps), 0f, 1f, 0.4f),
             Percent(item.Outline.GetValue(frame, length, fps), 0f, 1f, 0.3f),

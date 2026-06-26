@@ -47,10 +47,10 @@ internal sealed class CrossHatchShadingCustomEffect(IGraphicsDevicesAndContext d
         public float Amount { get => constants.Amount; set { constants.Amount = Clamp(value, 0f, 1f, 1f); UpdateConstants(); } }
 
         [CustomEffectProperty(PropertyType.Float, (int)Properties.Density)]
-        public float Density { get => constants.Density; set { constants.Density = Clamp(value, 3f, 80f, 12f); UpdateConstants(); } }
+        public float Density { get => constants.Density; set { constants.Density = Clamp(value, 3f, 320f, 12f); UpdateConstants(); } }
 
         [CustomEffectProperty(PropertyType.Float, (int)Properties.Thickness)]
-        public float Thickness { get => constants.Thickness; set { constants.Thickness = Clamp(value, 0.2f, 12f, 1.2f); UpdateConstants(); } }
+        public float Thickness { get => constants.Thickness; set { constants.Thickness = Clamp(value, 0.2f, 48f, 1.2f); UpdateConstants(); } }
 
         [CustomEffectProperty(PropertyType.Float, (int)Properties.ShadowDepth)]
         public float ShadowDepth { get => constants.ShadowDepth; set { constants.ShadowDepth = Clamp(value, 0f, 2f, 1f); UpdateConstants(); } }

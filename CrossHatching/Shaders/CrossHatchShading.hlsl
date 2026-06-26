@@ -156,6 +156,7 @@ float4 main(
     float2 patternPosition = scene + seedOffset;
     float shade = saturate((1.0 - luma) * shadowDepth);
     float halfWidth = thickness * 0.5;
+    float safeDensity = max(density, 1e-3);
 
     float hatchMax = 0.0;
     float hatchSum = 0.0;
@@ -167,9 +168,9 @@ float4 main(
         float2 flowDir = Rotate(flowTangent, layerOffset[i]);
         float2 direction = normalize(lerp(fixedDir, flowDir, flowWeight));
 
-        float projection = dot(patternPosition, direction) + Hash01(seed * 4 + i) * density;
-        float coordinate = projection / density;
-        float distancePx = abs(frac(coordinate) - 0.5) * density;
+        float projection = dot(patternPosition, direction) + Hash01(seed * 4 + i) * safeDensity;
+        float coordinate = projection / safeDensity;
+        float distancePx = abs(frac(coordinate) - 0.5) * safeDensity;
         float aa = max(fwidth(projection), 1.0) * 0.5;
         float lineMask = 1.0 - smoothstep(halfWidth - aa, halfWidth + aa, distancePx);
 
