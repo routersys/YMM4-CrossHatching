@@ -5,9 +5,12 @@ using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Controls;
 using YukkuriMovieMaker.Exo;
 using YukkuriMovieMaker.Player.Video;
+using YukkuriMovieMaker.Plugin;
 using YukkuriMovieMaker.Plugin.Effects;
 
 namespace CrossHatching;
+
+[PluginDetails(AuthorName = "routersys", ContentId = "nc487900")]
 
 [VideoEffect(nameof(Texts.EffectName), [VideoEffectCategories.Filtering], [nameof(Texts.TagCrossHatch), nameof(Texts.TagHatching), nameof(Texts.TagPen), nameof(Texts.TagEngraving), nameof(Texts.TagBlueprint), nameof(Texts.TagManga)], IsAviUtlSupported = false, ResourceType = typeof(Texts))]
 public sealed class CrossHatchShadingEffect : VideoEffectBase
