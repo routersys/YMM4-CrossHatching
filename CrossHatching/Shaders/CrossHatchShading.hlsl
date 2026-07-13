@@ -1,5 +1,5 @@
-Texture2D SourceTexture : register(t0);
-SamplerState SourceSampler : register(s0);
+Texture2D InputTexture : register(t0);
+SamplerState InputSampler : register(s0);
 
 cbuffer Constants : register(b0)
 {
@@ -90,7 +90,7 @@ float4 SampleScene(float2 uv, float2 pixelStep, float2 scenePosition, float2 off
     float2 minimum = inputBounds.xy + 0.5;
     float2 maximum = max(inputBounds.zw - 0.5, minimum);
     float2 target = clamp(scenePosition + offset, minimum, maximum);
-    return SourceTexture.SampleLevel(SourceSampler, uv + (target - scenePosition) * pixelStep, 0);
+    return InputTexture.SampleLevel(InputSampler, uv + (target - scenePosition) * pixelStep, 0);
 }
 
 float2 Straighten(float4 premultiplied)
@@ -113,7 +113,7 @@ float4 main(
     float4 uv0 : TEXCOORD0
 ) : SV_TARGET
 {
-    float4 source = SourceTexture.SampleLevel(SourceSampler, uv0.xy, 0);
+    float4 source = InputTexture.SampleLevel(InputSampler, uv0.xy, 0);
     if (amount <= 0.0 || source.a <= 0.0)
         return source;
 

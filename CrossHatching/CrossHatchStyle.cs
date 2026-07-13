@@ -1,18 +1,19 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CrossHatching;
-
-public enum CrossHatchStyle
+namespace CrossHatching
 {
-    [Display(Name = nameof(Texts.StylePen), Description = nameof(Texts.StylePenDesc), ResourceType = typeof(Texts))]
-    Pen = 0,
+    public enum CrossHatchStyle
+    {
+        [Display(Name = nameof(Texts.CrossHatchShadingStylePen), Description = nameof(Texts.CrossHatchShadingStylePenDesc), ResourceType = typeof(Texts))]
+        Pen = 0,
 
-    [Display(Name = nameof(Texts.StyleEngraving), Description = nameof(Texts.StyleEngravingDesc), ResourceType = typeof(Texts))]
-    Engraving = 1,
+        [Display(Name = nameof(Texts.CrossHatchShadingStyleEngraving), Description = nameof(Texts.CrossHatchShadingStyleEngravingDesc), ResourceType = typeof(Texts))]
+        Engraving = 1,
 
-    [Display(Name = nameof(Texts.StyleManga), Description = nameof(Texts.StyleMangaDesc), ResourceType = typeof(Texts))]
-    Manga = 2,
+        [Display(Name = nameof(Texts.CrossHatchShadingStyleManga), Description = nameof(Texts.CrossHatchShadingStyleMangaDesc), ResourceType = typeof(Texts))]
+        Manga = 2,
 
-    [Display(Name = nameof(Texts.StyleBlueprint), Description = nameof(Texts.StyleBlueprintDesc), ResourceType = typeof(Texts))]
-    Blueprint = 3,
+        [Display(Name = nameof(Texts.CrossHatchShadingStyleBlueprint), Description = nameof(Texts.CrossHatchShadingStyleBlueprintDesc), ResourceType = typeof(Texts))]
+        Blueprint = 3,
+    }
 }

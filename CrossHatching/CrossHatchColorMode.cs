@@ -1,12 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CrossHatching;
-
-public enum CrossHatchColorMode
+namespace CrossHatching
 {
-    [Display(Name = nameof(Texts.ColorModeInkAndPaper), Description = nameof(Texts.ColorModeInkAndPaperDesc), ResourceType = typeof(Texts))]
-    InkAndPaper = 0,
+    public enum CrossHatchColorMode
+    {
+        [Display(Name = nameof(Texts.CrossHatchShadingColorModeInkAndPaper), Description = nameof(Texts.CrossHatchShadingColorModeInkAndPaperDesc), ResourceType = typeof(Texts))]
+        InkAndPaper = 0,
 
-    [Display(Name = nameof(Texts.ColorModePreserveSource), Description = nameof(Texts.ColorModePreserveSourceDesc), ResourceType = typeof(Texts))]
-    PreserveSource = 1,
+        [Display(Name = nameof(Texts.CrossHatchShadingColorModePreserveSource), Description = nameof(Texts.CrossHatchShadingColorModePreserveSourceDesc), ResourceType = typeof(Texts))]
+        PreserveSource = 1,
+    }
 }
