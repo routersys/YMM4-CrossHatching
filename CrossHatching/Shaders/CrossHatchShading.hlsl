@@ -166,6 +166,7 @@ float4 main(
     {
         float2 fixedDir = float2(cos(angles[i]), sin(angles[i]));
         float2 flowDir = Rotate(flowTangent, layerOffset[i]);
+        flowDir = dot(flowDir, fixedDir) < 0.0 ? -flowDir : flowDir;
         float2 direction = normalize(lerp(fixedDir, flowDir, flowWeight));
 
         float projection = dot(patternPosition, direction) + Hash01(seed * 4 + i) * safeDensity;
