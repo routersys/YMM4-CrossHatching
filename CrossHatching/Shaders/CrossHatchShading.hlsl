@@ -18,6 +18,7 @@ cbuffer Constants : register(b0)
     float4 inkColor : packoffset(c3);
     float4 paperColor : packoffset(c4);
     float4 inputBounds : packoffset(c5);
+    float wobble : packoffset(c6.x);
 };
 
 static const float3 LumaWeight = float3(0.2126, 0.7152, 0.0722);
@@ -27,6 +28,8 @@ static const float EdgeThreshold = 0.080;
 static const float EdgeSoftness = 0.140;
 static const float AlphaEdgeWeight = 1.4;
 static const float PaperNoiseDepth = 0.06;
+static const float WobbleAmplitude = 0.45;
+static const float WobbleWidthDepth = 0.35;
 
 uint Hash32(uint value)
 {
@@ -47,6 +50,19 @@ float CellNoise(int2 cell)
 {
     uint hash = Hash32(asuint(cell.x) * 0x9e3779b9u ^ Hash32(asuint(cell.y) * 0x85ebca6bu ^ asuint(seed)));
     return hash * (1.0 / 4294967296.0);
+}
+
+float ValueNoise(float2 position)
+{
+    float2 cell = floor(position);
+    float2 fraction = position - cell;
+    float2 weight = fraction * fraction * (3.0 - 2.0 * fraction);
+    int2 base = int2(cell);
+    float n00 = CellNoise(base);
+    float n10 = CellNoise(base + int2(1, 0));
+    float n01 = CellNoise(base + int2(0, 1));
+    float n11 = CellNoise(base + int2(1, 1));
+    return lerp(lerp(n00, n10, weight.x), lerp(n01, n11, weight.x), weight.y);
 }
 
 void GetStyle(int value, out float4 anglesDeg, out float4 thresholds, out float grainScale, out float outlineScale, out float crossBoost)
@@ -155,8 +171,8 @@ float4 main(
     float2 seedOffset = float2(Hash01(seed * 2 + 1), Hash01(seed * 2 + 3)) * 1024.0;
     float2 patternPosition = scene + seedOffset;
     float shade = saturate((1.0 - luma) * shadowDepth);
-    float halfWidth = thickness * 0.5;
     float safeDensity = max(density, 1e-3);
+    float wobbleFrequency = 0.35 / safeDensity;
 
     float hatchMax = 0.0;
     float hatchSum = 0.0;
@@ -169,7 +185,10 @@ float4 main(
         flowDir = dot(flowDir, fixedDir) < 0.0 ? -flowDir : flowDir;
         float2 direction = normalize(lerp(fixedDir, flowDir, flowWeight));
 
+        float wobbleNoise = ValueNoise(patternPosition * wobbleFrequency + i * 17.0) - 0.5;
         float projection = dot(patternPosition, direction) + Hash01(seed * 4 + i) * safeDensity;
+        projection += wobble * wobbleNoise * safeDensity * WobbleAmplitude;
+        float halfWidth = thickness * 0.5 * (1.0 + wobble * wobbleNoise * WobbleWidthDepth);
         float coordinate = projection / safeDensity;
         float distancePx = abs(frac(coordinate) - 0.5) * safeDensity;
         float aa = max(fwidth(projection), 1.0) * 0.5;

@@ -41,6 +41,10 @@ namespace CrossHatching
         [AnimationSlider("F1", "%", 0d, 100d)]
         public Animation Flow { get; } = new(40, 0, 100);
 
+        [Display(GroupName = nameof(Texts.CrossHatchShadingBasicGroup), Name = nameof(Texts.CrossHatchShadingWobbleName), Description = nameof(Texts.CrossHatchShadingWobbleDesc), Order = 55, ResourceType = typeof(Texts))]
+        [AnimationSlider("F1", "%", 0d, 100d)]
+        public Animation Wobble { get; } = new(25, 0, 100);
+
         [Display(GroupName = nameof(Texts.CrossHatchShadingBasicGroup), Name = nameof(Texts.CrossHatchShadingOutlineName), Description = nameof(Texts.CrossHatchShadingOutlineDesc), Order = 60, ResourceType = typeof(Texts))]
         [AnimationSlider("F1", "%", 0d, 100d)]
         public Animation Outline { get; } = new(30, 0, 100);
@@ -84,6 +88,6 @@ namespace CrossHatching
 
         public override IVideoEffectProcessor CreateVideoEffect(IGraphicsDevicesAndContext devices) => new CrossHatchShadingEffectProcessor(devices, this);
 
-        protected override IEnumerable<IAnimatable> GetAnimatables() => [Amount, Density, Thickness, ShadowDepth, Flow, Outline, ToneSoftness, Grain];
+        protected override IEnumerable<IAnimatable> GetAnimatables() => [Amount, Density, Thickness, ShadowDepth, Flow, Wobble, Outline, ToneSoftness, Grain];
     }
 }

@@ -28,6 +28,7 @@ namespace CrossHatching
                 Finite(item.Thickness.GetValue(frame, length, fps), 0.2f, 48f, 1.2f),
                 Percent(item.ShadowDepth.GetValue(frame, length, fps), 0f, 2f, 1f),
                 Percent(item.Flow.GetValue(frame, length, fps), 0f, 1f, 0.4f),
+                Percent(item.Wobble.GetValue(frame, length, fps), 0f, 1f, 0.25f),
                 Percent(item.Outline.GetValue(frame, length, fps), 0f, 1f, 0.3f),
                 Percent(item.ToneSoftness.GetValue(frame, length, fps), 0f, 0.5f, 0.12f),
                 Percent(item.Grain.GetValue(frame, length, fps), 0f, 1f, 0.12f),
@@ -45,6 +46,7 @@ namespace CrossHatching
                 effect.Thickness = next.Thickness;
                 effect.ShadowDepth = next.ShadowDepth;
                 effect.Flow = next.Flow;
+                effect.Wobble = next.Wobble;
                 effect.Outline = next.Outline;
                 effect.ToneSoftness = next.ToneSoftness;
                 effect.Grain = next.Grain;
@@ -96,6 +98,7 @@ namespace CrossHatching
             float Thickness,
             float ShadowDepth,
             float Flow,
+            float Wobble,
             float Outline,
             float ToneSoftness,
             float Grain,

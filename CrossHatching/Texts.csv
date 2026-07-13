@@ -15,6 +15,8 @@ CrossHatchShadingShadowDepthName,,陰影,Shadow,阴影,陰影,음영,Sombra,ال
 CrossHatchShadingShadowDepthDesc,,暗部で線が増える強さです。,How strongly lines build up in dark areas.,暗部中线条增加的强度。,暗部中線條增加的強度。,어두운 영역에서 선이 늘어나는 강도입니다.,Cuánto se acumulan las líneas en zonas oscuras.,مدى تكاثف الخطوط في المناطق الداكنة.,Seberapa kuat garis menumpuk di area gelap.
 CrossHatchShadingFlowName,,流れ,Flow,流向,流向,흐름,Flujo,التدفق,Aliran
 CrossHatchShadingFlowDesc,,明暗の勾配へ線の向きを寄せる強さです。,How strongly line direction follows the luminance gradient.,线条方向顺应明暗梯度的强度。,線條方向順應明暗梯度的強度。,선 방향이 명암 기울기를 따르는 강도입니다.,Cuánto sigue la dirección de línea al gradiente de luz.,مدى اتباع اتجاه الخط لميل الإضاءة.,Seberapa kuat arah garis mengikuti gradien terang.
+CrossHatchShadingWobbleName,,手描き揺らぎ,Wobble,手绘抖动,手繪抖動,손그림 흔들림,Temblor,اهتزاز يدوي,Goyangan
+CrossHatchShadingWobbleDesc,,線の位置と太さを揺らして手描きの質感を加えます。,Perturbs line position and width for a hand-drawn feel.,抖动线条位置与粗细以增加手绘质感。,抖動線條位置與粗細以增加手繪質感。,선의 위치와 굵기를 흔들어 손그림 질감을 더합니다.,Perturba la posición y el grosor de las líneas para un aspecto dibujado a mano.,يهزّ موضع الخطوط وسمكها لإضفاء ملمس مرسوم يدويًا.,Menggoyangkan posisi dan ketebalan garis untuk kesan gambar tangan.
 CrossHatchShadingOutlineName,,輪郭,Outline,轮廓,輪廓,윤곽,Contorno,المخطط,Garis Tepi
 CrossHatchShadingOutlineDesc,,ハッチに重ねる輪郭線の強さです。,Strength of the contour lines added over the hatching.,叠加在排线上的轮廓线强度。,疊加在排線上的輪廓線強度。,해칭 위에 더해지는 윤곽선 강도입니다.,Intensidad de los contornos sobre la trama.,قوة خطوط الكفاف فوق التظليل.,Kekuatan garis kontur di atas arsiran.
 CrossHatchShadingInkColorName,,インク色,Ink Color,墨色,墨色,잉크 색,Color de tinta,لون الحبر,Warna Tinta

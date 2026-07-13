@@ -14,6 +14,7 @@ namespace CrossHatching
         public float Thickness { get => GetFloatValue((int)EffectImpl.Properties.Thickness); set => SetValue((int)EffectImpl.Properties.Thickness, value); }
         public float ShadowDepth { get => GetFloatValue((int)EffectImpl.Properties.ShadowDepth); set => SetValue((int)EffectImpl.Properties.ShadowDepth, value); }
         public float Flow { get => GetFloatValue((int)EffectImpl.Properties.Flow); set => SetValue((int)EffectImpl.Properties.Flow, value); }
+        public float Wobble { get => GetFloatValue((int)EffectImpl.Properties.Wobble); set => SetValue((int)EffectImpl.Properties.Wobble, value); }
         public float Outline { get => GetFloatValue((int)EffectImpl.Properties.Outline); set => SetValue((int)EffectImpl.Properties.Outline, value); }
         public float ToneSoftness { get => GetFloatValue((int)EffectImpl.Properties.ToneSoftness); set => SetValue((int)EffectImpl.Properties.ToneSoftness, value); }
         public float Grain { get => GetFloatValue((int)EffectImpl.Properties.Grain); set => SetValue((int)EffectImpl.Properties.Grain, value); }
@@ -41,6 +42,7 @@ namespace CrossHatching
                 Grain = 0.12f,
                 InkColor = new Vector4(17f / 255f, 17f / 255f, 17f / 255f, 1f),
                 PaperColor = new Vector4(246f / 255f, 241f / 255f, 231f / 255f, 1f),
+                Wobble = 0.25f,
             };
 
             [CustomEffectProperty(PropertyType.Float, (int)Properties.Amount)]
@@ -57,6 +59,9 @@ namespace CrossHatching
 
             [CustomEffectProperty(PropertyType.Float, (int)Properties.Flow)]
             public float Flow { get => constants.Flow; set { constants.Flow = Clamp(value, 0f, 1f, 0.4f); UpdateConstants(); } }
+
+            [CustomEffectProperty(PropertyType.Float, (int)Properties.Wobble)]
+            public float Wobble { get => constants.Wobble; set { constants.Wobble = Clamp(value, 0f, 1f, 0.25f); UpdateConstants(); } }
 
             [CustomEffectProperty(PropertyType.Float, (int)Properties.Outline)]
             public float Outline { get => constants.Outline; set { constants.Outline = Clamp(value, 0f, 1f, 0.3f); UpdateConstants(); } }
@@ -144,6 +149,10 @@ namespace CrossHatching
                 public Vector4 InkColor;
                 public Vector4 PaperColor;
                 public Vector4 InputBounds;
+                public float Wobble;
+                public float Pad0;
+                public float Pad1;
+                public float Pad2;
             }
 
             public enum Properties
@@ -153,6 +162,7 @@ namespace CrossHatching
                 Thickness,
                 ShadowDepth,
                 Flow,
+                Wobble,
                 Outline,
                 ToneSoftness,
                 Grain,
